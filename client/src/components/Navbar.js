@@ -53,6 +53,7 @@ export default function Navbar() {
   return (
     <nav style={navStyle}>
       <div
+        className="nav-container"
         style={{
           maxWidth: 1280,
           margin: '0 auto',
@@ -75,8 +76,8 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Global Pardon and Waivers"
+            className="nav-logo"
             style={{
-              height: 72,
               width: 'auto',
               objectFit: 'contain',
             }}
@@ -98,15 +99,10 @@ export default function Navbar() {
               to={l.to}
               style={{
                 color: '#0B1F3A',
-
                 fontSize: '0.95rem',
-
                 fontWeight: 600,
-
                 letterSpacing: '0.2px',
-
                 textDecoration: 'none',
-
                 transition: 'all 0.25s ease',
               }}
               onMouseEnter={(e) => {
@@ -270,6 +266,10 @@ export default function Navbar() {
       )}
 
       <style>{`
+        .nav-logo {
+          height: 72px;
+        }
+
         @media (max-width: 900px) {
           .desktop-nav {
             display: none !important;
@@ -277,6 +277,17 @@ export default function Navbar() {
 
           .hamburger {
             display: flex !important;
+          }
+
+          /* MOBILE NAV HEIGHT */
+          .nav-container {
+            height: 68px !important;
+            padding: 0 1rem !important;
+          }
+
+          /* MOBILE LOGO */
+          .nav-logo {
+            height: 42px;
           }
         }
       `}</style>

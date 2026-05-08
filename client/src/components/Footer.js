@@ -33,21 +33,41 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2 */}
-          <div>
-            <h4 style={{ color: '#fff', fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 14 }}>
-              Services
-            </h4>
-            {['Canadian Pardon', 'US Entry Waiver', 'NEXUS Application', 'Free Consultation'].map((s) => (
-              <Link
-                key={s}
-                to="/services"
-                style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: 8 }}
-              >
-                {s}
-              </Link>
-            ))}
-          </div>
+         {/* Column 2 */}
+<div>
+  <h4
+    style={{
+      color: '#fff',
+      fontSize: '0.78rem',
+      fontWeight: 700,
+      textTransform: 'uppercase',
+      letterSpacing: '2px',
+      marginBottom: 14
+    }}
+  >
+    Services
+  </h4>
+
+  {[
+    { name: 'Canadian Pardon', id: 'canadian-pardon' },
+    { name: 'US Entry Waiver', id: 'us-entry-waiver' },
+    { name: 'NEXUS Application', id: 'nexus-application' },
+  ].map((s) => (
+    <a
+      key={s.name}
+      href={`/services#${s.id}`}
+      style={{
+        display: 'block',
+        color: 'rgba(255,255,255,0.5)',
+        fontSize: '0.85rem',
+        marginBottom: 8,
+        textDecoration: 'none'
+      }}
+    >
+      {s.name}
+    </a>
+  ))}
+</div>
 
           {/* Column 3 */}
           <div>

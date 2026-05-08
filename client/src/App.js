@@ -84,7 +84,7 @@ function App() {
               {/* MAIN CONTENT */}
               <main
                 style={{
-                  paddingTop: '94px',
+                  paddingTop: '70px',
                   minHeight: '100vh',
                   background: '#fff',
                 }}

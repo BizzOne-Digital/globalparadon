@@ -68,7 +68,7 @@ export function Services() {
       <PageHero eyebrow="Our Services" title="Expert Help for Every Barrier a Criminal Record Creates" subtitle="Three specialized services designed to clear your path — whether you need to seal your record, cross the US border, or join the NEXUS program." />
 
       {/* Service 1: Canadian Pardon */}
-     <section className="section">
+    <section className="section" id="canadian-pardon">
   <div className="container">
 
     <div
@@ -256,7 +256,8 @@ export function Services() {
       <div style={{ background: '#e5eaf0', height: 1, maxWidth: 1200, margin: '0 auto 0' }} />
 
       {/* Service 2: US Entry Waiver */}
-    <section className="section section-alt">
+    {/* Service 2: US Entry Waiver */}
+<section className="section section-alt" id="us-entry-waiver">
   <div className="container">
 
     <div
@@ -470,7 +471,7 @@ export function Services() {
 </section>
 
       {/* Service 3: NEXUS */}
-     <section className="section">
+     <section className="section"  id="nexus-application">
   <div className="container">
 
     <div
@@ -1233,83 +1234,82 @@ export function About() {
         subtitle="Since 2010, we've helped over 5,000 Canadians clear their records and reclaim their freedom. Here's our story."
       />
 
-      {/* MISSION */}
-      <section className="section">
-        <div className="container">
-          <div
-            className="about-mission-grid"
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: '4rem',
-              alignItems: 'center',
-            }}
-          >
-            {/* LEFT */}
-            <div>
-              <div className="section-eyebrow">
-                Our Mission
-              </div>
+     {/* MISSION */}
+<section className="section">
+  <div className="container">
+    <div
+      className="about-mission-grid"
+      style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '4rem',
+        alignItems: 'center',
+      }}
+    >
+      {/* LEFT */}
+      <div>
+        <div className="section-eyebrow">
+          Our Mission
+        </div>
 
-              <h2
-                style={{
-                  fontFamily: 'Playfair Display,serif',
-                  fontSize: '2.2rem',
-                  color: '#0B1F3A',
-                  lineHeight: 1.2,
-                  marginBottom: '1.2rem',
-                }}
-              >
-                We Believe a Past Mistake Shouldn't Define Your Future
-              </h2>
+        <h2
+          style={{
+            fontFamily: 'Playfair Display,serif',
+            fontSize: '2.2rem',
+            color: '#0B1F3A',
+            lineHeight: 1.2,
+            marginBottom: '1.2rem',
+          }}
+        >
+          Helping You Move Forward With Confidence
+        </h2>
 
-              <p
-                style={{
-                  color: '#6b7280',
-                  lineHeight: 1.8,
-                  marginBottom: '1.2rem',
-                  fontSize: '0.96rem',
-                }}
-              >
-                ClearPath was founded on a simple belief:
-                every Canadian who has paid their debt
-                to society deserves a fair chance at a
-                fresh start. A criminal record — even one
-                from decades ago — creates invisible walls
-                that block people from jobs, housing,
-                travel, and full participation in their
-                communities.
-              </p>
+        <p
+          style={{
+            color: '#6b7280',
+            lineHeight: 1.8,
+            marginBottom: '1.2rem',
+            fontSize: '0.96rem',
+          }}
+        >
+          At Global Pardon & US Waiver Services, our mission
+          is to help individuals overcome past obstacles and
+          create new opportunities for a better future.
+          We believe that one mistake should not define a
+          person's entire life or limit their ability to
+          travel, work, and move forward with confidence.
+        </p>
 
-              <p
-                style={{
-                  color: '#6b7280',
-                  lineHeight: 1.8,
-                  marginBottom: '1.2rem',
-                  fontSize: '0.96rem',
-                }}
-              >
-                Our certified specialists work every day
-                to tear down those walls. We aren't
-                lawyers — we're dedicated pardon and
-                waiver professionals who have processed
-                thousands of applications and know exactly
-                what it takes to get approved.
-              </p>
+        <p
+          style={{
+            color: '#6b7280',
+            lineHeight: 1.8,
+            marginBottom: '1.2rem',
+            fontSize: '0.96rem',
+          }}
+        >
+          With years of experience and a dedicated team of
+          professionals, we provide trusted guidance for
+          record suspensions, US entry waivers, and related
+          services. We understand that every case is unique,
+          which is why we support our clients through every
+          step of the process with care, professionalism,
+          and attention to detail.
+        </p>
 
-              <p
-                style={{
-                  color: '#6b7280',
-                  lineHeight: 1.8,
-                  fontSize: '0.96rem',
-                }}
-              >
-                We're proud of our 98% approval rate —
-                not because it makes us look good, but
-                because every percentage point represents
-                a real person who got their life back.
-              </p>
-            </div>
+        <p
+          style={{
+            color: '#6b7280',
+            lineHeight: 1.8,
+            fontSize: '0.96rem',
+          }}
+        >
+          Our goal is simple — to make the process less
+          stressful, provide reliable support, and help
+          people regain peace of mind while opening the
+          door to new possibilities and a brighter future.
+        </p>
+      </div>
 
             {/* RIGHT */}
             <div
@@ -1568,130 +1568,7 @@ export function About() {
         </div>
       </section>
 
-      {/* TEAM */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header">
-            <div className="section-eyebrow">
-              Our Team
-            </div>
-
-            <h2 className="section-title">
-              Specialists Dedicated to Your Case
-            </h2>
-
-            <p className="section-sub">
-              Our team of certified specialists brings
-              decades of combined experience in Canadian
-              pardon law and US immigration admissibility.
-            </p>
-          </div>
-
-          <div
-            className="about-team-grid"
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(4,1fr)',
-              gap: '1.5rem',
-            }}
-          >
-            {[
-              {
-                img:
-                  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
-                name: 'Michael Chen',
-                role: 'Senior Pardon Specialist',
-                years: '12 years',
-              },
-              {
-                img:
-                  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
-                name: 'Sarah Williams',
-                role: 'US Waiver Specialist',
-                years: '9 years',
-              },
-              {
-                img:
-                  'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
-                name: 'David Park',
-                role: 'NEXUS Application Lead',
-                years: '7 years',
-              },
-              {
-                img:
-                  'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
-                name: 'Jennifer Liu',
-                role: 'Client Relations Manager',
-                years: '10 years',
-              },
-            ].map((t) => (
-              <div
-                key={t.name}
-                style={{
-                  background: '#fff',
-                  borderRadius: 10,
-                  overflow: 'hidden',
-                  border: '1px solid #e5eaf0',
-                  boxShadow:
-                    '0 2px 12px rgba(0,0,0,0.05)',
-                  textAlign: 'center',
-                }}
-              >
-                <img
-                  src={t.img}
-                  alt={t.name}
-                  style={{
-                    width: '100%',
-                    height: 220,
-                    objectFit: 'cover',
-                    objectPosition: 'top',
-                  }}
-                />
-
-                <div
-                  style={{
-                    padding: '1.2rem',
-                  }}
-                >
-                  <h4
-                    style={{
-                      fontFamily:
-                        'Playfair Display,serif',
-                      fontSize: '1rem',
-                      color: '#0B1F3A',
-                      marginBottom: 3,
-                    }}
-                  >
-                    {t.name}
-                  </h4>
-
-                  <div
-                    style={{
-                      fontSize: '0.78rem',
-                      color: '#C9A84C',
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: 1,
-                      marginBottom: 4,
-                    }}
-                  >
-                    {t.role}
-                  </div>
-
-                  <div
-                    style={{
-                      fontSize: '0.78rem',
-                      color: '#9ca3af',
-                    }}
-                  >
-                    {t.years} experience
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* RESPONSIVE */}
       <style>{`

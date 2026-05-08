@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       {/* TRUST BAR */}
-      <div style={{ background: '#0B1F3A', padding: '0.65rem 0', borderBottom: '2px solid #C9A84C', marginTop: 0 }}>
+      <div className="mobile-hide-trust" style={{ background: '#0B1F3A', padding: '35px 0 0.65rem', borderBottom: '2px solid #C9A84C', marginTop: 0 }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
           {[[<LockSVG />, '100% Confidential'],, [<PhoneSVG />, 'Free Consultation'], [<ClockSVG />, 'Fast Processing'],].map(([icon, text]) => (
             <div key={text} style={{ display: 'flex', alignItems: 'center', gap: 7, color: 'rgba(255,255,255,0.88)', fontSize: '0.8rem', fontWeight: 500 }}>
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </div>
 
-    <section
+    <section 
   style={{
     minHeight: '100vh',
     backgroundImage: `
@@ -171,8 +171,6 @@ export default function Home() {
 
       {/* FORM */}
       <div className="hero-form-wrap">
-
-      
 
         <div className="hero-form-card">
 
@@ -418,12 +416,12 @@ export default function Home() {
     }
 
     .hero-form-wrap{
-  position:relative;
-  display:flex;
-  justify-content:flex-end;
-  padding-right:0;
-  margin-right:-40px;   /* form ko right push karega */
-}
+      position:relative;
+      display:flex;
+      justify-content:flex-end;
+      padding-right:0;
+      margin-right:-40px;
+    }
 
     .hero-gold-line{
       position:absolute;
@@ -603,52 +601,60 @@ export default function Home() {
       }
     }
 
-   @media(max-width:768px){
-  section{
-    min-height:auto !important;
-    padding:70px 0 70px !important;
-  }
+    @media(max-width:768px){
 
-  .hero-form-wrap{
-    display:none;
-  }
-  section{
-    padding:90px 0 0 !important;
-  }
+      .mobile-hide-trust{
+        display:none !important;
+      }
 
-  .hero-left{
-    padding-left:0;
-  }
+      section{
+        min-height:auto !important;
+        /* FIX: 75px = sirf navbar height, trust bar ka gap khatam */
+        padding:75px 0 50px !important;
+      }
 
-  .hero-title{
-    font-size:3rem;
-    line-height:1.05;
-  }
+      .hero-form-wrap{
+        display:none;
+      }
 
-  .hero-text{
-    font-size:1rem;
-  }
+      .hero-left{
+        padding-left:0;
+        margin-top:0;
+      }
 
-  .hero-form-wrap{
-    display:none;
-  }
+      .hero-grid{
+        gap:0;
+      }
 
-  .hero-form-grid{
-    grid-template-columns:1fr;
-  }
+      .hero-title{
+        font-size:3rem;
+        line-height:1.05;
+      }
 
-  .hero-form-card{
-    padding:1.5rem;
-  }
+      .hero-text{
+        font-size:1rem;
+      }
 
-  .hero-form-title{
-    font-size:2rem;
-  }
+      .hero-form-grid{
+        grid-template-columns:1fr;
+      }
 
-  .trust-item{
-    padding:1.5rem 0;
-  }
-}
+      .hero-form-card{
+        padding:1.5rem;
+      }
+
+      .hero-form-title{
+        font-size:2rem;
+      }
+
+      .trust-item{
+        padding:1.5rem 0;
+      }
+
+      .hero-trust-row{
+        display:none;
+      }
+    }
 
   `}</style>
 </section>
@@ -664,7 +670,6 @@ export default function Home() {
       </p>
     </div>
 
-    {/* GRID FIXED */}
     <div
       style={{
         display: 'grid',
@@ -1042,7 +1047,6 @@ export default function Home() {
       </p>
     </div>
 
-    {/* GRID */}
     <div
       style={{
         display: 'grid',
@@ -1051,7 +1055,6 @@ export default function Home() {
         position: 'relative'
       }}
     >
-      {/* CONNECTING LINE (desktop only feel, but safe) */}
       <div
         style={{
           position: 'absolute',
@@ -1139,7 +1142,6 @@ export default function Home() {
       ))}
     </div>
 
-    {/* CTA */}
     <div style={{ textAlign: 'center', marginTop: '3rem' }}>
       <Link
         to="/apply"
@@ -1164,6 +1166,7 @@ export default function Home() {
 
   </div>
 </section>
+
       {/* TESTIMONIALS */}
 <section className="section section-alt">
   <div className="container">
@@ -1176,7 +1179,6 @@ export default function Home() {
       </p>
     </div>
 
-    {/* TESTIMONIAL GRID */}
     <div
       style={{
         display: 'grid',
@@ -1219,7 +1221,6 @@ export default function Home() {
             height: '100%'
           }}
         >
-          {/* big quote */}
           <div
             style={{
               position: 'absolute',
@@ -1235,7 +1236,6 @@ export default function Home() {
             "
           </div>
 
-          {/* stars */}
           <div style={{ display: 'flex', gap: 2, marginBottom: '0.9rem' }}>
             {[...Array(5)].map((_, i) => (
               <StarSVG key={i} />
@@ -1254,7 +1254,6 @@ export default function Home() {
             "{r.text}"
           </p>
 
-          {/* user */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <div
               style={{
@@ -1287,7 +1286,6 @@ export default function Home() {
       ))}
     </div>
 
-    {/* TRUST BADGES */}
     <div
       style={{
         display: 'grid',
@@ -1361,7 +1359,6 @@ export default function Home() {
       ].map(([icon, num, label]) => (
         <div key={label} style={{ padding: '0.5rem' }}>
           
-          {/* ICON */}
           <div
             style={{
               color: '#C9A84C',
@@ -1373,7 +1370,6 @@ export default function Home() {
             {icon}
           </div>
 
-          {/* NUMBER */}
           <div
             style={{
               fontFamily: 'Playfair Display,serif',
@@ -1385,7 +1381,6 @@ export default function Home() {
             {num}
           </div>
 
-          {/* LABEL */}
           <div
             style={{
               fontSize: '0.76rem',
@@ -1417,7 +1412,6 @@ export default function Home() {
       </p>
     </div>
 
-    {/* GRID */}
     <div
       style={{
         display: 'grid',
@@ -1530,7 +1524,6 @@ export default function Home() {
       }}
     >
 
-      {/* LEFT SIDE */}
       <div>
         <div className="section-eyebrow">Common Questions</div>
 
@@ -1568,7 +1561,6 @@ export default function Home() {
         />
       </div>
 
-      {/* RIGHT SIDE */}
       <div>
         <FaqAccordion
           items={[
