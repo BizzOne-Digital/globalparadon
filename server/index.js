@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const path = require('path');
 
 dotenv.config();
 
@@ -13,29 +12,26 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// MongoDB Connection
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log('✅ MongoDB Connected');
+  })
+  .catch((err) => {
+    console.error('❌ MongoDB connection error:', err.message);
+  });
+
 // Routes
 app.use('/api/leads', require('./routes/leads'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/cases', require('./routes/cases'));
 app.use('/api/contact', require('./routes/contact'));
 
-// Serve React in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-  app.get('*', (req, res) =>
-    res.sendFile(path.resolve(__dirname, '../client/build/index.html'))
-  );
-}
+// Test Route
+app.get('/', (req, res) => {
+  res.send('🚀 Global Pardon API Running');
+});
 
-// Connect to MongoDB
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log('✅ MongoDB Connected');
-    const PORT = process.env.PORT || 5000;
-    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
-  })
-  .catch((err) => {
-    console.error('❌ MongoDB connection error:', err.message);
-    process.exit(1);
-  });
+// Export for Vercel
+module.exports = app;
