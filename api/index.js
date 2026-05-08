@@ -5,7 +5,6 @@ require('dotenv').config();
 
 const app = express();
 
-// CORS
 app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -15,12 +14,11 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// MongoDB
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));
 
-// Routes
+// ROUTES
 app.use('/api/auth', require('../server/routes/auth'));
 app.use('/api/leads', require('../server/routes/leads'));
 app.use('/api/cases', require('../server/routes/cases'));
