@@ -41,7 +41,7 @@ router.get('/me', protect, (req, res) => {
 });
 
 // POST /api/auth/seed — Creates first admin (run once, then remove)
-router.post('/seed', async (req, res) => {
+router.get('/seed', async (req, res) => {
   try {
     const exists = await User.findOne({ role: 'admin' });
     if (exists) return res.status(400).json({ message: 'Admin already exists' });
