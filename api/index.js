@@ -5,13 +5,22 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
+// CORS
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// MongoDB
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));
 
+// Routes
 app.use('/api/auth', require('../server/routes/auth'));
 app.use('/api/leads', require('../server/routes/leads'));
 app.use('/api/cases', require('../server/routes/cases'));
