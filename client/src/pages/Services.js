@@ -766,54 +766,54 @@ export function Services() {
           </tr>
         </thead>
 
-        {/* TABLE BODY */}
-        <tbody>
+      {/* TABLE BODY */}
+<tbody>
 
-          {[
-            [
-              'Goal',
-              'Seal Canadian criminal record',
-              'Enter the United States',
-              'Fast border crossing'
-            ],
-            [
-              'Who needs it',
-              'Anyone with a Canadian conviction',
-              'Canadians denied US entry',
-              'Frequent Canada-US travelers'
-            ],
-            [
-              'Processing Time',
-              '6–18 months',
-              '6–12 months',
-              '3–6 months'
-            ],
-            [
-              'Validity',
-              'Permanent (unless revoked)',
-              '1–5 years (renewable)',
-              '5 years (renewable)'
-            ],
-            [
-              'Our Fee',
-              '$395',
-              '$1,495',
-              '$295'
-            ],
-            [
-              'Gov Fee',
-              '$50 CAD',
-              '$585 USD',
-              '$50 CAD'
-            ]
-          ].map(([label, ...vals], i) => (
+  {[
+    [
+      'Goal',
+      'Seal Canadian criminal record',
+      'Enter the United States',
+      'Fast border crossing'
+    ],
+    [
+      'Who needs it',
+      'Anyone with a Canadian conviction',
+      'Canadians denied US entry',
+      'Frequent Canada-US travelers'
+    ],
+    [
+      'Processing Time',
+      '6–18 months',
+      '6–12 months',
+      '3–6 months'
+    ],
+    [
+      'Validity',
+      'Permanent (unless revoked)',
+      '1–5 years (renewable)',
+      '5 years (renewable)'
+    ],
+    [
+      'Support Includes',
+      'Document preparation & guidance',
+      'Application strategy & case support',
+      'Application assistance & interview guidance'
+    ],
+    [
+      'Service Type',
+      'Personalized case support',
+      'Customized waiver assistance',
+      'Professional application support'
+    ]
+  ].map(([label, ...vals], i) => (
 
-            <tr
-              key={label}
-              style={{
-                background: i % 2 === 0 ? '#fff' : '#F7F6F2'
-              }}
-            >
+    <tr
+      key={label}
+      style={{
+        background: i % 2 === 0 ? '#fff' : '#F7F6F2'
+      }}
+    >
 
               {/* LABEL COLUMN */}
               <td
