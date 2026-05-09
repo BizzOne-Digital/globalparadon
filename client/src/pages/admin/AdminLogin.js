@@ -31,13 +31,13 @@ export default function AdminLogin() {
             <path d="M18 4L6 9.5v8.5c0 7 4.9 13.5 12 16c7.1-2.5 12-9 12-16v-8.5L18 4z" fill="#0B1F3A"/>
             <path d="M12 18l4 4 8-8" stroke="#C9A84C" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          <h1 style={{ fontFamily: 'Playfair Display,serif', fontSize: '1.6rem', color: '#0B1F3A', marginBottom: 4 }}>ClearPath Admin</h1>
+          <h1 style={{ fontFamily: 'Playfair Display,serif', fontSize: '1.6rem', color: '#0B1F3A', marginBottom: 4 }}>GlobalPardon Admin</h1>
           <p style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Sign in to manage leads & cases</p>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Email Address</label>
-            <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} placeholder="admin@clearpathpardons.ca" required />
+            <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} placeholder="admin@GlobalPardonpardons.ca" required />
           </div>
           <div className="form-group">
             <label>Password</label>

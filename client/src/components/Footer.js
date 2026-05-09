@@ -26,7 +26,7 @@ export default function Footer() {
               Global Pardon  Pardons & US Waivers
             </div>
             <p style={{ fontSize: '0.85rem', lineHeight: 1.7, color: 'rgba(255,255,255,0.5)' }}>
-              Helping Canadians clear their path forward since 2010. Trusted by over 5,000 clients from coast to coast.
+             Helping Canadians move forward with confidence since 2010. Trusted by over 5,000 clients across the country.
             </p>
             <div style={{ marginTop: 14, fontSize: '0.82rem', color: 'rgba(255,255,255,0.4)' }}>
               📞 1877 226-6612 &nbsp;|&nbsp; 647 699-8141
@@ -120,7 +120,7 @@ export default function Footer() {
             color: 'rgba(255,255,255,0.35)'
           }}
         >
-          <span>© 2026 ClearPath Pardons & US Waivers. All rights reserved.</span>
+          <span>© 2026 Global Pardons &  Waivers. All rights reserved.</span>
           <span>Mississauga, Ontario, Canada</span>
         </div>
       </footer>

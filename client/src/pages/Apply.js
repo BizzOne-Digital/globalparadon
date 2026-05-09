@@ -39,7 +39,7 @@ export default function Apply() {
         <div className="container" style={{ textAlign: 'center', position: 'relative' }}>
           <div style={{ display: 'inline-block', background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.3)', color: '#E8C46A', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', padding: '6px 16px', borderRadius: 20, marginBottom: '1.2rem' }}>Get Started</div>
           <h1 style={{ fontFamily: 'Playfair Display,serif', fontSize: '2.8rem', color: '#fff', marginBottom: '1rem', lineHeight: 1.15 }}>Apply Now — Free Consultation</h1>
-          <p style={{ color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto', fontSize: '1rem', lineHeight: 1.75 }}>Complete the form below and a ClearPath specialist will review your case and contact you within 24 business hours — no obligation, 100% confidential.</p>
+          <p style={{ color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto', fontSize: '1rem', lineHeight: 1.75 }}>Complete the form below and a Global Paradon specialist will review your case and contact you within 24 business hours — no obligation, 100% confidential.</p>
         </div>
       </div>
 
@@ -51,7 +51,7 @@ export default function Apply() {
             {/* Left — Info */}
             <div>
               <h2 style={{ fontFamily: 'Playfair Display,serif', fontSize: '1.9rem', color: '#0B1F3A', marginBottom: '1rem', lineHeight: 1.2 }}>Let's Talk About Your Future</h2>
-              <p style={{ color: '#6b7280', lineHeight: 1.8, marginBottom: '2rem', fontSize: '0.95rem' }}>ClearPath has helped thousands of Canadians remove the barriers imposed by a criminal record. Tell us about your situation and we'll guide you to the right solution — completely free.</p>
+              <p style={{ color: '#6b7280', lineHeight: 1.8, marginBottom: '2rem', fontSize: '0.95rem' }}>GlobalPardon has helped thousands of Canadians remove the barriers imposed by a criminal record. Tell us about your situation and we'll guide you to the right solution — completely free.</p>
 
               {/* Contact Details */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
@@ -109,7 +109,7 @@ export default function Apply() {
                     <CheckIcon size={30} color="#4ade80" />
                   </div>
                   <h3 style={{ fontFamily: 'Playfair Display,serif', fontSize: '1.8rem', color: '#E8C46A', marginBottom: '0.8rem' }}>Application Submitted!</h3>
-                  <p style={{ color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, fontSize: '0.95rem' }}>Thank you! A ClearPath specialist will review your case and contact you within <strong style={{ color: '#fff' }}>24 business hours</strong>.</p>
+                  <p style={{ color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, fontSize: '0.95rem' }}>Thank you! A GlobalPardon specialist will review your case and contact you within <strong style={{ color: '#fff' }}>24 business hours</strong>.</p>
                   <div style={{ marginTop: '2rem', padding: '1rem', background: 'rgba(255,255,255,0.06)', borderRadius: 8, fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)' }}>
                     Need immediate help? Call us at <strong style={{ color: '#E8C46A' }}>1-877-226-6612</strong>
                   </div>
@@ -183,7 +183,7 @@ export default function Apply() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.5rem' }}>
             {[
-              { val: '5,000+', label: 'Clients Served', desc: 'Over 5,000 Canadians have cleared their records with ClearPath since 2010.' },
+              { val: '5,000+', label: 'Clients Served', desc: 'Over 5,000 Canadians have cleared their records with GlobalPardon since 2010.' },
               { val: '98%', label: 'Approval Rate', desc: 'Industry-leading approval rate built on meticulous preparation and expertise.' },
               { val: '14+', label: 'Years Experience', desc: 'Established in 2010 — we\'ve seen every type of case and know how to win.' },
               { val: 'Free', label: 'Consultation', desc: 'Your first call costs you nothing. No pressure, no obligation — ever.' },

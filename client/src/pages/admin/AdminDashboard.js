@@ -20,7 +20,7 @@ function AdminLayout({ children }) {
       {/* Sidebar */}
       <div style={{ width: 240, background: '#0B1F3A', color: '#fff', display: 'flex', flexDirection: 'column', flexShrink: 0 }}>
         <div style={{ padding: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
-          <div style={{ fontFamily: 'Playfair Display,serif', fontSize: '1rem', fontWeight: 700, color: '#fff' }}>ClearPath</div>
+          <div style={{ fontFamily: 'Playfair Display,serif', fontSize: '1rem', fontWeight: 700, color: '#fff' }}>GlobalPardon</div>
           <div style={{ fontSize: '0.65rem', color: '#E8C46A', letterSpacing: '2px', textTransform: 'uppercase', marginTop: 2 }}>Admin Panel</div>
         </div>
         <nav style={{ padding: '1rem 0', flex: 1 }}>

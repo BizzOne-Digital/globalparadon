@@ -560,7 +560,7 @@ export function Services() {
             fontSize: '0.95rem'
           }}
         >
-          If you have a criminal history that could affect approval, ClearPath manages the complete process from review to interview preparation.
+          If you have a criminal history that could affect approval, GlobalPardon manages the complete process from review to interview preparation.
         </p>
 
         {/* CHECKLIST */}
@@ -1229,7 +1229,7 @@ export function About() {
   return (
     <>
       <PageHero
-        eyebrow="About ClearPath"
+        eyebrow="About GlobalPardon"
         title="Canada's Most Trusted Pardon & Waiver Specialists"
         subtitle="Since 2010, we've helped over 5,000 Canadians clear their records and reclaim their freedom. Here's our story."
       />
@@ -1319,7 +1319,7 @@ export function About() {
             >
               <img
                 src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=700&q=80"
-                alt="ClearPath team"
+                alt="GlobalPardon team"
                 style={{
                   width: '100%',
                   borderRadius: 10,
@@ -1458,7 +1458,7 @@ export function About() {
             </div>
 
             <h2 className="section-title">
-              What Sets ClearPath Apart
+              What Sets GlobalPardon Apart
             </h2>
 
             <p className="section-sub">
@@ -1613,17 +1613,18 @@ export function About() {
 }
 
 /* ══════════════════════════════════════
-   PRICING PAGE
+   SERVICES PAGE
 ══════════════════════════════════════ */
 export function Pricing() {
   return (
     <>
       <PageHero
-        eyebrow="Transparent Pricing"
-        title="No Hidden Fees. No Surprises. Ever."
-        subtitle="We believe you deserve to know exactly what you're paying for before you commit. All government fees are clearly listed separately."
+        eyebrow="Professional Support"
+        title="Tailored Solutions For Every Situation"
+        subtitle="Every case is unique. Our team provides personalized guidance and support based on your specific needs and circumstances."
       />
 
+      {/* SERVICES */}
       <section className="section">
         <div className="container">
           <div className="pricing-grid">
@@ -1631,9 +1632,9 @@ export function Pricing() {
               {
                 icon: <DocSVG />,
                 title: 'Canadian Pardon',
-                sub: 'Record Suspension Application',
-                price: '$395',
-                govFee: '$50 CAD (Parole Board)',
+                sub: 'Record Suspension Support',
+                custom:
+                  'Personalized assistance based on your case',
                 features: [
                   'Eligibility assessment',
                   'All paperwork prepared',
@@ -1644,14 +1645,14 @@ export function Pricing() {
                   'Post-approval guidance',
                 ],
                 note:
-                  'Most summary offences: 5-year wait. Indictable: 10-year wait.',
+                  'Support tailored to your eligibility and application requirements.',
               },
               {
                 icon: <PassSVG />,
                 title: 'US Entry Waiver',
-                sub: 'Form I-192 Application',
-                price: '$1,495',
-                govFee: '$585 USD (USCIS)',
+                sub: 'Form I-192 Application Support',
+                custom:
+                  'Customized solutions for complex cases',
                 features: [
                   'Full I-192 application',
                   'Personal rehabilitation statement',
@@ -1659,18 +1660,18 @@ export function Pricing() {
                   'Criminal rehabilitation strategy',
                   'Response to USCIS queries',
                   'Renewal support included',
-                  'Multi-year validity where eligible',
+                  'Multi-year validity guidance',
                 ],
                 featured: true,
                 note:
-                  'Waiver valid 1–5 years. We handle renewals too.',
+                  'Complete support from preparation to submission.',
               },
               {
                 icon: <PlaneSVG />,
                 title: 'NEXUS Application',
                 sub: 'Trusted Traveller Program',
-                price: '$295',
-                govFee: '$50 CAD (CBSA/CBP)',
+                custom:
+                  'Professional application assistance',
                 features: [
                   'Application preparation',
                   'Criminal history review',
@@ -1681,7 +1682,7 @@ export function Pricing() {
                   'Card delivery tracking',
                 ],
                 note:
-                  'NEXUS card valid 5 years. Renew every 5 years.',
+                  'Guidance designed to simplify the entire process.',
               },
             ].map((p) => (
               <div
@@ -1691,13 +1692,14 @@ export function Pricing() {
                   border: `1.5px solid ${
                     p.featured ? '#C9A84C' : '#dde4ed'
                   }`,
-                  borderRadius: 10,
+                  borderRadius: 12,
                   padding: '2rem',
                   transform: p.featured ? 'scale(1.02)' : 'none',
                   position: 'relative',
                   boxShadow: p.featured
                     ? '0 16px 48px rgba(11,31,58,0.2)'
                     : '0 2px 12px rgba(0,0,0,0.05)',
+                  transition: '0.3s ease',
                 }}
               >
                 {p.featured && (
@@ -1718,18 +1720,18 @@ export function Pricing() {
                       textTransform: 'uppercase',
                     }}
                   >
-                    Best Value
+                    Most Requested
                   </div>
                 )}
 
                 <div
                   style={{
-                    width: 52,
-                    height: 52,
+                    width: 56,
+                    height: 56,
                     background: p.featured
                       ? 'rgba(201,168,76,0.12)'
                       : '#F7F6F2',
-                    borderRadius: 10,
+                    borderRadius: 12,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -1741,8 +1743,8 @@ export function Pricing() {
 
                 <h3
                   style={{
-                    fontFamily: 'Playfair Display,serif',
-                    fontSize: '1.4rem',
+                    fontFamily: 'Playfair Display, serif',
+                    fontSize: '1.5rem',
                     color: p.featured ? '#fff' : '#0B1F3A',
                     marginBottom: 4,
                   }}
@@ -1752,7 +1754,7 @@ export function Pricing() {
 
                 <p
                   style={{
-                    fontSize: '0.82rem',
+                    fontSize: '0.85rem',
                     color: p.featured
                       ? 'rgba(255,255,255,0.55)'
                       : '#9ca3af',
@@ -1770,27 +1772,15 @@ export function Pricing() {
 
                 <div
                   style={{
-                    fontFamily: 'Playfair Display,serif',
-                    fontSize: '2.2rem',
-                    fontWeight: 700,
+                    fontSize: '1rem',
+                    fontWeight: 600,
+                    lineHeight: 1.6,
                     color: p.featured ? '#E8C46A' : '#0B1F3A',
-                    marginBottom: 4,
-                  }}
-                >
-                  {p.price}
-                </div>
-
-                <p
-                  style={{
-                    fontSize: '0.78rem',
-                    color: p.featured
-                      ? 'rgba(255,255,255,0.45)'
-                      : '#9ca3af',
                     marginBottom: '1.5rem',
                   }}
                 >
-                  + Gov fee: {p.govFee}
-                </p>
+                  {p.custom}
+                </div>
 
                 {p.features.map((f) => (
                   <div
@@ -1799,10 +1789,10 @@ export function Pricing() {
                       display: 'flex',
                       alignItems: 'center',
                       gap: 8,
-                      marginBottom: 8,
-                      fontSize: '0.87rem',
+                      marginBottom: 10,
+                      fontSize: '0.9rem',
                       color: p.featured
-                        ? 'rgba(255,255,255,0.8)'
+                        ? 'rgba(255,255,255,0.82)'
                         : '#6b7280',
                     }}
                   >
@@ -1822,9 +1812,9 @@ export function Pricing() {
                 {p.note && (
                   <p
                     style={{
-                      fontSize: '0.78rem',
+                      fontSize: '0.8rem',
                       color: p.featured
-                        ? 'rgba(255,255,255,0.4)'
+                        ? 'rgba(255,255,255,0.45)'
                         : '#9ca3af',
                       marginTop: '1rem',
                       paddingTop: '1rem',
@@ -1833,7 +1823,7 @@ export function Pricing() {
                           ? 'rgba(255,255,255,0.08)'
                           : '#e5eaf0'
                       }`,
-                      lineHeight: 1.6,
+                      lineHeight: 1.7,
                     }}
                   >
                     {p.note}
@@ -1846,8 +1836,8 @@ export function Pricing() {
                     display: 'block',
                     textAlign: 'center',
                     marginTop: '1.5rem',
-                    padding: '12px',
-                    borderRadius: 4,
+                    padding: '14px',
+                    borderRadius: 6,
                     fontWeight: 700,
                     fontSize: '0.875rem',
                     textTransform: 'uppercase',
@@ -1857,7 +1847,7 @@ export function Pricing() {
                     color: p.featured ? '#0B1F3A' : '#fff',
                   }}
                 >
-                  Get Started
+                  Get Free Assessment
                 </Link>
               </div>
             ))}
@@ -1866,21 +1856,23 @@ export function Pricing() {
           <p
             style={{
               textAlign: 'center',
-              marginTop: '2rem',
-              fontSize: '0.88rem',
+              marginTop: '2.5rem',
+              fontSize: '0.92rem',
               color: '#9ca3af',
             }}
           >
-            Need multiple services?{' '}
+            Need help choosing the right service?{' '}
             <Link
               to="/apply"
               style={{ color: '#0B1F3A', fontWeight: 700 }}
             >
-              Contact us for a bundle discount.
+              Speak with our team today.
             </Link>
           </p>
         </div>
       </section>
+
+    
 
       {/* Payment & FAQ */}
       <section className="section section-alt">
@@ -1988,7 +1980,7 @@ export function Testimonials() {
       type: 'US Entry Waiver',
       location: 'Toronto, ON',
       rating: 5,
-      text: "I was denied entry to the US twice because of a DUI from 12 years ago. I thought that door was permanently closed. ClearPath got my waiver approved in just over 5 months. I've since been to the US for work three times with zero issues. I cannot thank them enough.",
+      text: "I was denied entry to the US twice because of a DUI from 12 years ago. I thought that door was permanently closed. GlobalPardon got my waiver approved in just over 5 months. I've since been to the US for work three times with zero issues. I cannot thank them enough.",
     },
     {
       initials: 'JT',
@@ -1996,7 +1988,7 @@ export function Testimonials() {
       type: 'Canadian Pardon',
       location: 'Vancouver, BC',
       rating: 5,
-      text: "I had a drug charge from when I was 23. I'm 38 now and it was still blocking me from getting a security clearance at work. ClearPath walked me through every single step. My pardon was approved and I got the promotion I'd been waiting for. Life-changing.",
+      text: "I had a drug charge from when I was 23. I'm 38 now and it was still blocking me from getting a security clearance at work. GlobalPardon walked me through every single step. My pardon was approved and I got the promotion I'd been waiting for. Life-changing.",
     },
     {
       initials: 'DL',
@@ -2004,7 +1996,7 @@ export function Testimonials() {
       type: 'NEXUS Application',
       location: 'Calgary, AB',
       rating: 5,
-      text: 'My NEXUS application had complications from an assault charge from years ago that I thought would disqualify me. The ClearPath team knew exactly what documentation to include and how to frame the case. Approved on the first try.',
+      text: 'My NEXUS application had complications from an assault charge from years ago that I thought would disqualify me. The GlobalPardon team knew exactly what documentation to include and how to frame the case. Approved on the first try.',
     },
     {
       initials: 'MC',
@@ -2012,7 +2004,7 @@ export function Testimonials() {
       type: 'Canadian Pardon',
       location: 'Ottawa, ON',
       rating: 5,
-      text: "After 10 years with a record hanging over me, ClearPath cleared it in about 8 months. Now I can finally volunteer at my kids' school and apply for the jobs I actually want. The team was compassionate, professional, and kept me informed throughout.",
+      text: "After 10 years with a record hanging over me, GlobalPardon cleared it in about 8 months. Now I can finally volunteer at my kids' school and apply for the jobs I actually want. The team was compassionate, professional, and kept me informed throughout.",
     },
     {
       initials: 'RK',
@@ -2020,7 +2012,7 @@ export function Testimonials() {
       type: 'US Entry Waiver',
       location: 'Winnipeg, MB',
       rating: 5,
-      text: "My employer needed me to travel to the US regularly. ClearPath handled my waiver with complete professionalism and got it done faster than I expected. I've now renewed it twice through them. Always smooth, always responsive.",
+      text: "My employer needed me to travel to the US regularly. GlobalPardon handled my waiver with complete professionalism and got it done faster than I expected. I've now renewed it twice through them. Always smooth, always responsive.",
     },
     {
       initials: 'PS',
@@ -2028,7 +2020,7 @@ export function Testimonials() {
       type: 'Canadian Pardon',
       location: 'Mississauga, ON',
       rating: 5,
-      text: "I was nervous about the whole process and didn't know where to start. The team at ClearPath made it easy — clear communication, no surprises, and they handled everything. Can't thank them enough for giving me my life back.",
+      text: "I was nervous about the whole process and didn't know where to start. The team at GlobalPardon made it easy — clear communication, no surprises, and they handled everything. Can't thank them enough for giving me my life back.",
     },
     {
       initials: 'BN',
@@ -2036,7 +2028,7 @@ export function Testimonials() {
       type: 'US Entry Waiver',
       location: 'Halifax, NS',
       rating: 5,
-      text: 'Had a fraud charge from 15 years ago. USCIS denied me twice before I found ClearPath. They rebuilt my entire application, wrote a compelling personal statement, and it was approved. They know exactly what these agencies want to see.',
+      text: 'Had a fraud charge from 15 years ago. USCIS denied me twice before I found GlobalPardon. They rebuilt my entire application, wrote a compelling personal statement, and it was approved. They know exactly what these agencies want to see.',
     },
     {
       initials: 'AL',
@@ -2044,7 +2036,7 @@ export function Testimonials() {
       type: 'NEXUS Application',
       location: 'Edmonton, AB',
       rating: 5,
-      text: "I travel for work constantly and the border wait times were destroying my schedule. ClearPath got me my NEXUS card despite a minor offence from my past. Now I'm through the border in under 10 minutes. Best investment I've made.",
+      text: "I travel for work constantly and the border wait times were destroying my schedule. GlobalPardon got me my NEXUS card despite a minor offence from my past. Now I'm through the border in under 10 minutes. Best investment I've made.",
     },
     {
       initials: 'TM',
@@ -2061,7 +2053,7 @@ export function Testimonials() {
       <PageHero
         eyebrow="Client Stories"
         title="Real Results for Real Canadians"
-        subtitle="Over 5,000 people have trusted ClearPath with their most sensitive cases. These are their stories."
+        subtitle="Over 5,000 people have trusted GlobalPardon with their most sensitive cases. These are their stories."
       />
 
       {/* Stats */}
@@ -2296,16 +2288,16 @@ export function FAQ() {
       title: 'NEXUS Applications',
       items: [
         ['What is the NEXUS program?', "NEXUS is a joint Canada-US Trusted Traveller program that allows pre-approved, low-risk travellers to cross the border faster using dedicated lanes, automated kiosks at airports, and expedited processing at marine ports. The card is valid for 5 years."],
-        ['Can I get NEXUS with a criminal record?', "It depends on the nature of your record. Minor or older offences may not be disqualifying. However, the application process is strict and any undisclosed history can lead to denial. ClearPath reviews your history upfront and advises on the best approach."],
+        ['Can I get NEXUS with a criminal record?', "It depends on the nature of your record. Minor or older offences may not be disqualifying. However, the application process is strict and any undisclosed history can lead to denial. GlobalPardon reviews your history upfront and advises on the best approach."],
         ['What happens at the NEXUS interview?', "You'll be interviewed separately by Canadian Border Services Agency (CBSA) and US Customs and Border Protection (CBP) officers. They ask about your travel history, criminal background, and reasons for applying. We prepare you thoroughly so there are no surprises."],
       ]
     },
     {
-      title: 'Working With ClearPath',
+      title: 'Working With GlobalPardon',
       items: [
-        ['Do I need a lawyer?', "No. Lawyers are not required for pardon or waiver applications. ClearPath's certified specialists handle thousands of these applications and consistently achieve exceptional approval rates at a fraction of legal costs."],
+        ['Do I need a lawyer?', "No. Lawyers are not required for pardon or waiver applications. GlobalPardon's certified specialists handle thousands of these applications and consistently achieve exceptional approval rates at a fraction of legal costs."],
         ['Is my information kept confidential?', "Absolutely. We operate under strict privacy policies in full compliance with Canada's PIPEDA privacy legislation. All documents are encrypted in transit and storage, and your information is never shared with third parties."],
-        ['What if my application is rejected?', "While rare with ClearPath's preparation (98% approval rate), rejections do happen. We analyze the decision, identify the grounds, and work with you on a reapplication strategy. Many clients who were rejected elsewhere have been approved through ClearPath."],
+        ['What if my application is rejected?', "While rare with GlobalPardon's preparation (98% approval rate), rejections do happen. We analyze the decision, identify the grounds, and work with you on a reapplication strategy. Many clients who were rejected elsewhere have been approved through GlobalPardon."],
         ['Do you serve clients outside Ontario?', "Yes. We serve clients across all provinces and territories in Canada. Our process is fully remote — we handle everything electronically and by mail, so your location doesn't matter."],
       ]
     },

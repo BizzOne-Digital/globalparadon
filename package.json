@@ -1,7 +1,7 @@
 {
-  "name": "clearpath-pardons",
+  "name": "global-pardons",
   "version": "1.0.0",
-  "description": "ClearPath Pardons & US Waivers - Full Stack MERN App",
+  "description": "Global Pardons & Waivers - Full Stack MERN App",
   "scripts": {
     "start": "node server/index.js",
     "server": "nodemon server/index.js",
