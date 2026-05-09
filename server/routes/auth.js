@@ -45,7 +45,7 @@ router.get('/seed', async (req, res) => {
   try {
     const exists = await User.findOne({ role: 'admin' });
     if (exists) return res.status(400).json({ message: 'Admin already exists' });
-    const admin = await User.create({ name: 'Admin', email: 'admin@globalpardon.com', password: 'Admin@1234', role: 'admin' });
+    const admin = await User.create({ name: 'Admin', email: 'admin@globalpardon.com', password: 'Admin1234', role: 'admin' });
     res.json({ message: 'Admin created', email: admin.email });
   } catch (err) {
     res.status(400).json({ message: err.message });
