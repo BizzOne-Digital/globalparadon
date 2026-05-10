@@ -1016,7 +1016,7 @@ export default function Home() {
               lineHeight: 1
             }}
           >
-            14+
+            16+
           </div>
           <div
             style={{
@@ -1354,7 +1354,7 @@ export default function Home() {
       {[
         [<UsersSVG />, '5,000+', 'Clients Served'],
         [<AwardSVG />, '98%', 'Approval Rate'],
-        [<ClockSVG />, '14+', 'Years Experience'],
+        [<ClockSVG />, '16+', 'Years Experience'],
         [<TrendSVG />, '3', 'Core Services']
       ].map(([icon, num, label]) => (
         <div key={label} style={{ padding: '0.5rem' }}>

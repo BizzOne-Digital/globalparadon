@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Column 1 */}
           <div>
             <div style={{ color: '#fff', fontFamily: 'Playfair Display,serif', fontSize: '1.1rem', fontWeight: 700, marginBottom: 10 }}>
-              Global Pardon  Pardons & US Waivers
+              Global Pardon  Pardons & Waivers
             </div>
             <p style={{ fontSize: '0.85rem', lineHeight: 1.7, color: 'rgba(255,255,255,0.5)' }}>
              Helping Canadians move forward with confidence since 2010. Trusted by over 5,000 clients across the country.

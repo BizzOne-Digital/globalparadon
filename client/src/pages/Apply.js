@@ -185,7 +185,7 @@ export default function Apply() {
             {[
               { val: '5,000+', label: 'Clients Served', desc: 'Over 5,000 Canadians have cleared their records with GlobalPardon since 2010.' },
               { val: '98%', label: 'Approval Rate', desc: 'Industry-leading approval rate built on meticulous preparation and expertise.' },
-              { val: '14+', label: 'Years Experience', desc: 'Established in 2010 — we\'ve seen every type of case and know how to win.' },
+              { val: '16+', label: 'Years Experience', desc: 'Established in 2010 — we\'ve seen every type of case and know how to win.' },
               { val: 'Free', label: 'Consultation', desc: 'Your first call costs you nothing. No pressure, no obligation — ever.' },
             ].map(b => (
               <div key={b.label} style={{ background: '#fff', borderRadius: 10, padding: '1.8rem', textAlign: 'center', border: '1px solid #e5eaf0', boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}>

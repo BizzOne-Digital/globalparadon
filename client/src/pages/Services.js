@@ -1399,7 +1399,7 @@ export function About() {
                 'Industry-leading',
               ],
               [
-                '14+',
+                '16+',
                 'Years Experience',
                 'Established 2010',
               ],
