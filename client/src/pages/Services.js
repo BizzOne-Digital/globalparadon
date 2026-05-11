@@ -1229,7 +1229,7 @@ export function About() {
   return (
     <>
       <PageHero
-        eyebrow="About Global Pardon"
+        eyebrow="About Global Pardon & Waiver"
         title="Canada's Most Trusted Pardon & Waiver Specialists"
         subtitle="Since 2010, we've helped over 5,000 Canadians clear their records and reclaim their freedom. Here's our story."
       />
