@@ -37,7 +37,7 @@ export default function AdminLogin() {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Email Address</label>
-            <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} placeholder="admin@GlobalPardonpardons.ca" required />
+            <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} placeholder="admin@.com" required />
           </div>
           <div className="form-group">
             <label>Password</label>
