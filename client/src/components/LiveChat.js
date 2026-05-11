@@ -17,7 +17,7 @@ export default function LiveChat() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10, paddingBottom: 10, borderBottom: '1px solid #eee' }}>
             <div style={{ width: 8, height: 8, background: '#22c55e', borderRadius: '50%' }}></div>
             <div>
-              <div style={{ fontWeight: 600, fontSize: '0.9rem', color: '#0B1F3A' }}>Global Paradon Support</div>
+              <div style={{ fontWeight: 600, fontSize: '0.9rem', color: '#0B1F3A' }}>Global Paradon & Waivers Support</div>
               <div style={{ fontSize: '0.72rem', color: '#6b7280' }}>Typically replies in minutes</div>
             </div>
             <button onClick={() => setOpen(false)} style={{ marginLeft: 'auto', background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.2rem', color: '#9ca3af', lineHeight: 1 }}>×</button>
