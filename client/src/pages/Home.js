@@ -835,7 +835,7 @@ export default function Home() {
     >
       {/* LEFT CONTENT */}
       <div>
-        <div className="section-eyebrow">Why Global Pardon</div>
+        <div className="section-eyebrow">Why Global Pardon & Waivers</div>
 
         <h2
           style={{
@@ -857,7 +857,7 @@ export default function Home() {
             fontSize: '0.96rem'
           }}
         >
-          Since 2010, Global Pardon has been Canada's most trusted name in record suspensions and US waivers. We aren't a law firm — we're dedicated specialists who achieve superior results at a fraction of legal costs.
+          Since 2010, Global Pardon & Waivers has been Canada's most trusted name in record suspensions and US waivers. We aren't a law firm — we're dedicated specialists who achieve superior results at a fraction of legal costs.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
@@ -1175,7 +1175,7 @@ export default function Home() {
       <div className="section-eyebrow">Client Reviews</div>
       <h2 className="section-title">Real People. Real Results.</h2>
       <p className="section-sub">
-        Over 5,000 Canadians have trusted Global Pardon with their most important cases. Here's what some of them say.
+        Over 5,000 Canadians have trusted Global Pardon & Waivers with their most important cases. Here's what some of them say.
       </p>
     </div>
 

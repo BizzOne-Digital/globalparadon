@@ -560,7 +560,7 @@ export function Services() {
             fontSize: '0.95rem'
           }}
         >
-          If you have a criminal history that could affect approval, Global Pardon manages the complete process from review to interview preparation.
+          If you have a criminal history that could affect approval, Global Pardon & Waivers manages the complete process from review to interview preparation.
         </p>
 
         {/* CHECKLIST */}
@@ -1272,7 +1272,7 @@ export function About() {
             fontSize: '0.96rem',
           }}
         >
-          At Global Pardon & US Waiver Services, our mission
+          At Global Pardon & Waiver Services, our mission
           is to help individuals overcome past obstacles and
           create new opportunities for a better future.
           We believe that one mistake should not define a
@@ -1458,7 +1458,7 @@ export function About() {
             </div>
 
             <h2 className="section-title">
-              What Sets Global Pardon Apart
+              What Sets Global Pardon & Waivers
             </h2>
 
             <p className="section-sub">
@@ -2288,7 +2288,7 @@ export function FAQ() {
       title: 'NEXUS Applications',
       items: [
         ['What is the NEXUS program?', "NEXUS is a joint Canada-US Trusted Traveller program that allows pre-approved, low-risk travellers to cross the border faster using dedicated lanes, automated kiosks at airports, and expedited processing at marine ports. The card is valid for 5 years."],
-        ['Can I get NEXUS with a criminal record?', "It depends on the nature of your record. Minor or older offences may not be disqualifying. However, the application process is strict and any undisclosed history can lead to denial. Global Pardon reviews your history upfront and advises on the best approach."],
+        ['Can I get NEXUS with a criminal record?', "It depends on the nature of your record. Minor or older offences may not be disqualifying. However, the application process is strict and any undisclosed history can lead to denial. Global Pardon & Waivers reviews your history upfront and advises on the best approach."],
         ['What happens at the NEXUS interview?', "You'll be interviewed separately by Canadian Border Services Agency (CBSA) and US Customs and Border Protection (CBP) officers. They ask about your travel history, criminal background, and reasons for applying. We prepare you thoroughly so there are no surprises."],
       ]
     },
