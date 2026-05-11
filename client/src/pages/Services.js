@@ -560,7 +560,7 @@ export function Services() {
             fontSize: '0.95rem'
           }}
         >
-          If you have a criminal history that could affect approval, GlobalPardon manages the complete process from review to interview preparation.
+          If you have a criminal history that could affect approval, Global Pardon manages the complete process from review to interview preparation.
         </p>
 
         {/* CHECKLIST */}
@@ -1229,7 +1229,7 @@ export function About() {
   return (
     <>
       <PageHero
-        eyebrow="About GlobalPardon"
+        eyebrow="About Global Pardon"
         title="Canada's Most Trusted Pardon & Waiver Specialists"
         subtitle="Since 2010, we've helped over 5,000 Canadians clear their records and reclaim their freedom. Here's our story."
       />
@@ -1319,7 +1319,7 @@ export function About() {
             >
               <img
                 src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=700&q=80"
-                alt="GlobalPardon team"
+                alt="Global Pardon team"
                 style={{
                   width: '100%',
                   borderRadius: 10,
@@ -1458,7 +1458,7 @@ export function About() {
             </div>
 
             <h2 className="section-title">
-              What Sets GlobalPardon Apart
+              What Sets Global Pardon Apart
             </h2>
 
             <p className="section-sub">
@@ -1980,7 +1980,7 @@ export function Testimonials() {
       type: 'US Entry Waiver',
       location: 'Toronto, ON',
       rating: 5,
-      text: "I was denied entry to the US twice because of a DUI from 12 years ago. I thought that door was permanently closed. GlobalPardon got my waiver approved in just over 5 months. I've since been to the US for work three times with zero issues. I cannot thank them enough.",
+      text: "I was denied entry to the US twice because of a DUI from 12 years ago. I thought that door was permanently closed. Global Pardon got my waiver approved in just over 5 months. I've since been to the US for work three times with zero issues. I cannot thank them enough.",
     },
     {
       initials: 'JT',
@@ -1988,7 +1988,7 @@ export function Testimonials() {
       type: 'Canadian Pardon',
       location: 'Vancouver, BC',
       rating: 5,
-      text: "I had a drug charge from when I was 23. I'm 38 now and it was still blocking me from getting a security clearance at work. GlobalPardon walked me through every single step. My pardon was approved and I got the promotion I'd been waiting for. Life-changing.",
+      text: "I had a drug charge from when I was 23. I'm 38 now and it was still blocking me from getting a security clearance at work. Global Pardon walked me through every single step. My pardon was approved and I got the promotion I'd been waiting for. Life-changing.",
     },
     {
       initials: 'DL',
@@ -1996,7 +1996,7 @@ export function Testimonials() {
       type: 'NEXUS Application',
       location: 'Calgary, AB',
       rating: 5,
-      text: 'My NEXUS application had complications from an assault charge from years ago that I thought would disqualify me. The GlobalPardon team knew exactly what documentation to include and how to frame the case. Approved on the first try.',
+      text: 'My NEXUS application had complications from an assault charge from years ago that I thought would disqualify me. The Global Pardon team knew exactly what documentation to include and how to frame the case. Approved on the first try.',
     },
     {
       initials: 'MC',
@@ -2004,7 +2004,7 @@ export function Testimonials() {
       type: 'Canadian Pardon',
       location: 'Ottawa, ON',
       rating: 5,
-      text: "After 10 years with a record hanging over me, GlobalPardon cleared it in about 8 months. Now I can finally volunteer at my kids' school and apply for the jobs I actually want. The team was compassionate, professional, and kept me informed throughout.",
+      text: "After 10 years with a record hanging over me, Global Pardon cleared it in about 8 months. Now I can finally volunteer at my kids' school and apply for the jobs I actually want. The team was compassionate, professional, and kept me informed throughout.",
     },
     {
       initials: 'RK',
@@ -2020,7 +2020,7 @@ export function Testimonials() {
       type: 'Canadian Pardon',
       location: 'Mississauga, ON',
       rating: 5,
-      text: "I was nervous about the whole process and didn't know where to start. The team at GlobalPardon made it easy — clear communication, no surprises, and they handled everything. Can't thank them enough for giving me my life back.",
+      text: "I was nervous about the whole process and didn't know where to start. The team at Global Pardon made it easy — clear communication, no surprises, and they handled everything. Can't thank them enough for giving me my life back.",
     },
     {
       initials: 'BN',
@@ -2028,7 +2028,7 @@ export function Testimonials() {
       type: 'US Entry Waiver',
       location: 'Halifax, NS',
       rating: 5,
-      text: 'Had a fraud charge from 15 years ago. USCIS denied me twice before I found GlobalPardon. They rebuilt my entire application, wrote a compelling personal statement, and it was approved. They know exactly what these agencies want to see.',
+      text: 'Had a fraud charge from 15 years ago. USCIS denied me twice before I found Global Pardon. They rebuilt my entire application, wrote a compelling personal statement, and it was approved. They know exactly what these agencies want to see.',
     },
     {
       initials: 'AL',
@@ -2036,7 +2036,7 @@ export function Testimonials() {
       type: 'NEXUS Application',
       location: 'Edmonton, AB',
       rating: 5,
-      text: "I travel for work constantly and the border wait times were destroying my schedule. GlobalPardon got me my NEXUS card despite a minor offence from my past. Now I'm through the border in under 10 minutes. Best investment I've made.",
+      text: "I travel for work constantly and the border wait times were destroying my schedule. Global Pardon got me my NEXUS card despite a minor offence from my past. Now I'm through the border in under 10 minutes. Best investment I've made.",
     },
     {
       initials: 'TM',
@@ -2053,7 +2053,7 @@ export function Testimonials() {
       <PageHero
         eyebrow="Client Stories"
         title="Real Results for Real Canadians"
-        subtitle="Over 5,000 people have trusted GlobalPardon with their most sensitive cases. These are their stories."
+        subtitle="Over 5,000 people have trusted Global Pardon with their most sensitive cases. These are their stories."
       />
 
       {/* Stats */}
@@ -2288,16 +2288,16 @@ export function FAQ() {
       title: 'NEXUS Applications',
       items: [
         ['What is the NEXUS program?', "NEXUS is a joint Canada-US Trusted Traveller program that allows pre-approved, low-risk travellers to cross the border faster using dedicated lanes, automated kiosks at airports, and expedited processing at marine ports. The card is valid for 5 years."],
-        ['Can I get NEXUS with a criminal record?', "It depends on the nature of your record. Minor or older offences may not be disqualifying. However, the application process is strict and any undisclosed history can lead to denial. GlobalPardon reviews your history upfront and advises on the best approach."],
+        ['Can I get NEXUS with a criminal record?', "It depends on the nature of your record. Minor or older offences may not be disqualifying. However, the application process is strict and any undisclosed history can lead to denial. Global Pardon reviews your history upfront and advises on the best approach."],
         ['What happens at the NEXUS interview?', "You'll be interviewed separately by Canadian Border Services Agency (CBSA) and US Customs and Border Protection (CBP) officers. They ask about your travel history, criminal background, and reasons for applying. We prepare you thoroughly so there are no surprises."],
       ]
     },
     {
-      title: 'Working With GlobalPardon',
+      title: 'Working With Global Pardon',
       items: [
-        ['Do I need a lawyer?', "No. Lawyers are not required for pardon or waiver applications. GlobalPardon's certified specialists handle thousands of these applications and consistently achieve exceptional approval rates at a fraction of legal costs."],
+        ['Do I need a lawyer?', "No. Lawyers are not required for pardon or waiver applications. Global Pardon's certified specialists handle thousands of these applications and consistently achieve exceptional approval rates at a fraction of legal costs."],
         ['Is my information kept confidential?', "Absolutely. We operate under strict privacy policies in full compliance with Canada's PIPEDA privacy legislation. All documents are encrypted in transit and storage, and your information is never shared with third parties."],
-        ['What if my application is rejected?', "While rare with GlobalPardon's preparation (98% approval rate), rejections do happen. We analyze the decision, identify the grounds, and work with you on a reapplication strategy. Many clients who were rejected elsewhere have been approved through GlobalPardon."],
+        ['What if my application is rejected?', "While rare with Global Pardon's preparation (98% approval rate), rejections do happen. We analyze the decision, identify the grounds, and work with you on a reapplication strategy. Many clients who were rejected elsewhere have been approved through Global Pardon."],
         ['Do you serve clients outside Ontario?', "Yes. We serve clients across all provinces and territories in Canada. Our process is fully remote — we handle everything electronically and by mail, so your location doesn't matter."],
       ]
     },
