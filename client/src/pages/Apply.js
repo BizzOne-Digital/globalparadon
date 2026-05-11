@@ -39,7 +39,7 @@ export default function Apply() {
         <div className="container" style={{ textAlign: 'center', position: 'relative' }}>
           <div style={{ display: 'inline-block', background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.3)', color: '#E8C46A', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', padding: '6px 16px', borderRadius: 20, marginBottom: '1.2rem' }}>Get Started</div>
           <h1 style={{ fontFamily: 'Playfair Display,serif', fontSize: '2.8rem', color: '#fff', marginBottom: '1rem', lineHeight: 1.15 }}>Apply Now — Free Consultation</h1>
-          <p style={{ color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto', fontSize: '1rem', lineHeight: 1.75 }}>Complete the form below and a Global Paradon specialist will review your case and contact you within 24 business hours — no obligation, 100% confidential.</p>
+          <p style={{ color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto', fontSize: '1rem', lineHeight: 1.75 }}>Complete the form below and a Global Pardon & Waivers specialist will review your case and contact you within 24 business hours — no obligation, 100% confidential.</p>
         </div>
       </div>
 
